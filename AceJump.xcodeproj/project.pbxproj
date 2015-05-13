@@ -24,6 +24,8 @@
 		888D219D1B032415002B3302 /* AceJump.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = AceJump.xcscheme; path = AceJump.xcodeproj/xcshareddata/xcschemes/AceJump.xcscheme; sourceTree = SOURCE_ROOT; };
 		888D219F1B032415002B3302 /* AceJump.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AceJump.h; sourceTree = "<group>"; };
 		888D21A01B032415002B3302 /* AceJump.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AceJump.m; sourceTree = "<group>"; };
+		888D21A71B0376F5002B3302 /* DVTFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVTFoundation.h; sourceTree = "<group>"; };
+		888D21A81B0376F5002B3302 /* DVTKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVTKit.h; sourceTree = "<group>"; };
 		C93A36CB026EBD7A214BE2B9 /* Pods-AceJump.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AceJump.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AceJump/Pods-AceJump.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 			children = (
 				888D219F1B032415002B3302 /* AceJump.h */,
 				888D21A01B032415002B3302 /* AceJump.m */,
+				888D21A91B0376FC002B3302 /* Xcode header */,
 				888D219B1B032415002B3302 /* Supporting Files */,
 			);
 			path = AceJump;
@@ -95,6 +98,15 @@
 				888D219D1B032415002B3302 /* AceJump.xcscheme */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		888D21A91B0376FC002B3302 /* Xcode header */ = {
+			isa = PBXGroup;
+			children = (
+				888D21A71B0376F5002B3302 /* DVTFoundation.h */,
+				888D21A81B0376F5002B3302 /* DVTKit.h */,
+			);
+			name = "Xcode header";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
