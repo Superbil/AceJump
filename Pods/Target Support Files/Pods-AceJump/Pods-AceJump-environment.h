@@ -6,12 +6,6 @@
 // project.
 
 
-// DTXcodeUtils
-#define COCOAPODS_POD_AVAILABLE_DTXcodeUtils
-#define COCOAPODS_VERSION_MAJOR_DTXcodeUtils 0
-#define COCOAPODS_VERSION_MINOR_DTXcodeUtils 1
-#define COCOAPODS_VERSION_PATCH_DTXcodeUtils 1
-
 // MASShortcut
 #define COCOAPODS_POD_AVAILABLE_MASShortcut
 #define COCOAPODS_VERSION_MAJOR_MASShortcut 2
