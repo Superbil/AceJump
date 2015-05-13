@@ -3,7 +3,7 @@
 //  AceJump
 //
 //  Created by Superbil on 2015/5/13.
-//  Copyright (c) 2015年 Superbil. All rights reserved.
+//  Copyright (c) 2015 Superbil. All rights reserved.
 //
 
 #import "AceJump.h"
