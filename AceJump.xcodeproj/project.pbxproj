@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E4161D012F907725A71CB54 /* libPods-AceJump.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0049AC2385028A6BC76AF87C /* libPods-AceJump.a */; };
 		888D21971B032415002B3302 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 888D21961B032415002B3302 /* AppKit.framework */; };
 		888D21991B032415002B3302 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 888D21981B032415002B3302 /* Foundation.framework */; };
 		888D219E1B032415002B3302 /* AceJump.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 888D219D1B032415002B3302 /* AceJump.xcscheme */; };
@@ -14,6 +15,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0049AC2385028A6BC76AF87C /* libPods-AceJump.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AceJump.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DF9C23DE4F43C8C3880D261 /* Pods-AceJump.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AceJump.release.xcconfig"; path = "Pods/Target Support Files/Pods-AceJump/Pods-AceJump.release.xcconfig"; sourceTree = "<group>"; };
 		888D21931B032415002B3302 /* AceJump.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AceJump.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		888D21961B032415002B3302 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		888D21981B032415002B3302 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -21,6 +24,7 @@
 		888D219D1B032415002B3302 /* AceJump.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = AceJump.xcscheme; path = AceJump.xcodeproj/xcshareddata/xcschemes/AceJump.xcscheme; sourceTree = SOURCE_ROOT; };
 		888D219F1B032415002B3302 /* AceJump.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AceJump.h; sourceTree = "<group>"; };
 		888D21A01B032415002B3302 /* AceJump.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AceJump.m; sourceTree = "<group>"; };
+		C93A36CB026EBD7A214BE2B9 /* Pods-AceJump.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AceJump.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AceJump/Pods-AceJump.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,18 +34,29 @@
 			files = (
 				888D21971B032415002B3302 /* AppKit.framework in Frameworks */,
 				888D21991B032415002B3302 /* Foundation.framework in Frameworks */,
+				4E4161D012F907725A71CB54 /* libPods-AceJump.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B173B7B69938EC4A1C27CC7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C93A36CB026EBD7A214BE2B9 /* Pods-AceJump.debug.xcconfig */,
+				7DF9C23DE4F43C8C3880D261 /* Pods-AceJump.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		888D218A1B032415002B3302 = {
 			isa = PBXGroup;
 			children = (
 				888D219A1B032415002B3302 /* AceJump */,
 				888D21951B032415002B3302 /* Frameworks */,
 				888D21941B032415002B3302 /* Products */,
+				6B173B7B69938EC4A1C27CC7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +73,7 @@
 			children = (
 				888D21961B032415002B3302 /* AppKit.framework */,
 				888D21981B032415002B3302 /* Foundation.framework */,
+				0049AC2385028A6BC76AF87C /* libPods-AceJump.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -88,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 888D21A41B032415002B3302 /* Build configuration list for PBXNativeTarget "AceJump" */;
 			buildPhases = (
+				06400C159550AB5074A897CF /* Check Pods Manifest.lock */,
 				888D218F1B032415002B3302 /* Sources */,
 				888D21901B032415002B3302 /* Resources */,
 				888D21911B032415002B3302 /* Frameworks */,
+				3E89136BB30A5CA47E0DF97B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -142,6 +160,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06400C159550AB5074A897CF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3E89136BB30A5CA47E0DF97B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AceJump/Pods-AceJump-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		888D218F1B032415002B3302 /* Sources */ = {
@@ -228,6 +279,7 @@
 		};
 		888D21A51B032415002B3302 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C93A36CB026EBD7A214BE2B9 /* Pods-AceJump.debug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
@@ -242,6 +294,7 @@
 		};
 		888D21A61B032415002B3302 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DF9C23DE4F43C8C3880D261 /* Pods-AceJump.release.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
@@ -273,6 +326,7 @@
 				888D21A61B032415002B3302 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

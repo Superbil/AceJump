@@ -1,0 +1,13 @@
+PODS:
+  - DTXcodeUtils (0.1.1)
+  - MASShortcut (2.1.2)
+
+DEPENDENCIES:
+  - DTXcodeUtils (~> 0.1)
+  - MASShortcut (~> 2.1)
+
+SPEC CHECKSUMS:
+  DTXcodeUtils: e080d36d30440b440aefa7bd7db88111a2317ce2
+  MASShortcut: ef92b912469f9f6744dba5f0a906665c26de760c
+
+COCOAPODS: 0.37.1
